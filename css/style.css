@@ -1,0 +1,117 @@
+.home{
+    background-image: url(../img/home.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.layer{
+  background-color: rgba(0,0,0, 0.7);
+}
+
+
+.resipe-img{
+  overflow: hidden;
+}
+.resipe-box img, .resipe-oreder-container img{
+  height: 250px;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+.resipe-box:hover img{
+  transform: scale(1.2);
+} 
+
+.resipe-oreder-container{
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+  background-color: rgba(0,0,0,.5);
+}
+.resipeOreder-box{
+  max-height: 15%;
+  overflow-y: auto;
+}
+
+
+.transition{
+  transition: a11 .5s ease-in-out;
+}
+.make-pointer{
+  cursor:pointer;
+}
+.menu{
+  top: 0;
+  z-index: 10000;
+  height:100vh;
+  overflow-y: auto;
+  transition: all .3s ease-in-out;
+}
+.menu::-webkit-scrollbar, .resipeOreder-box::-webkit-scrollbar{
+  width: 1em;
+}
+.menu::-webkit-scrollbar-thumb, .resipeOreder-box::-webkit-scrollbar-thumb{
+background-color: rgb(110, 105, 105);
+outline: 1px;
+border-radius: 5px;
+}
+.menu ul li{
+  cursor: pointer;
+  position: relative;
+}
+.menu li p{
+  position: relative;
+  z-index: 3;
+  transition: all .5s ease-in-out;
+}
+.menu li span{
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 1;
+  height: 100%;
+  width: 0;
+  transition: all .5s ease-in-out;
+}
+.menu ul li:hover, .active {
+  color: #111;
+} 
+.menu ul li:hover > span{
+  width: 100%;
+}
+.active span {
+  width: 100% !important;
+}
+.menu ul li:last-child{
+  border: none !important;
+}
+
+
+
+.resipe-box img, .resipe-order-container img {
+  height: 250px;
+  object-fit: cover;
+  transition: all .3s ease-in-out;
+}
+
+
+.resipe-order-container {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+} 
+#close-btn{
+  position: fixed !important;
+  background-color: rgb(51, 43, 43);
+}
+
+#close-btn:hover{
+  background-color: rgb(122, 99, 206);
+  color: blue;
+}
